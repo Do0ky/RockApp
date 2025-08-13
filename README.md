@@ -61,12 +61,12 @@ src/
 ---
 
 ## 🛠️ Installation & Setup
-
+```bash
 git clone https://github.com/Do0ky/RockApp.git
 cd rock-app
 npm install
 npm start
-
+```
 ---
 
 ## 💡 Potential Future Enhancements
