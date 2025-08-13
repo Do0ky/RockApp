@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+//testing creating an array 
+const rocksList = [
+  {
+    id: 0,
+    name: "Limestone",
+    category: "Sedimentary",
+    type: "Chemical"
+  },
+  {
+    id: 1,
+    name: "Sandstone",
+    category: "Sedimentary",
+    type: "Clastic"
+  },
+    {
+    id: 2,
+    name: "Chalk",
+    category: "Sedimentary",
+    type: "Organic"
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Rock App</h1>
     </div>
   );
 }

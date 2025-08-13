@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# 🪨 Rock App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive React-based educational app that helps users explore and identify common rock types.
+Designed for amateur geologists, hikers, students, and curious minds, this app makes geology accessible, engaging, and fun.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌍 Project Vision
 
-### `npm start`
+To empower users with a visually intuitive and scientifically grounded tool for learning about rocks—encouraging curiosity, hands-on exploration, and deeper understanding of Earth's materials.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- 🔍 **Search & Filter**: Explore rocks by name, type (igneous, sedimentary, metamorphic), or properties.
+- 📋 **Rock Cards**: View detailed information including texture, color, formation, and fun facts.
+- ➕ **User Collection**: Add or remove rocks to build your personal collection.
+- 🧠 **Quiz Mode** *(coming soon)*: Test your knowledge with a “Guess the Rock” game.
+- 💾 **Local Storage**: Save your collection between sessions.
+- 🎨 **Responsive Design**: Optimized for desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧪 Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** (with Hooks)
+- **JavaScript (ES6+)**
+- **CSS Modules / Styled Components**
+- **React Router** *(optional for multi-page navigation)*
+- **Local Storage API**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+src/ 
+├── components/ 
+│ ├── RockCard.js 
+│ ├── FilterPanel.js 
+│ ├── CollectionList.js 
+│ └── QuizModule.js 
+├── data/ 
+│ └── rocks.json 
+├── pages/ 
+│ ├── Home.js 
+│ └── Collection.js 
+├── App.js 
+└── index.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Data Sources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [USGS Rock Identification Basics](https://www.usgs.gov/special-topic/education/rock-identification)
+- [Geology.com Rock Gallery](https://geology.com/rocks/)
+- [Mindat.org](https://www.mindat.org/)
+- [Minerals Education Coalition](https://mineralseducationcoalition.org/minerals-database/)
+- [Rock Scanner](https://www.rockscanner.com/rocks)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/Do0ky/RockApp.git
+cd rock-app
+npm install
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 💡 Potential Future Enhancements
+- 📊 Fetch more data from an API
+- 📸 Image upload for rock identification
+- 🗺️ Map integration to show rock locations
+- 🧭 AR or camera-based recognition
+- 🧑‍🤝‍🧑 User submissions and community features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Authors
+Co-created by:
+- **Claire Peyre**  
+- **Aaron Escobar**  
