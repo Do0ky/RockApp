@@ -33,7 +33,7 @@ To empower users with a visually intuitive and scientifically grounded tool for 
 ---
 
 ## 📁 Project Structure
-
+```bash
 src/ 
 ├── components/ 
 │ ├── RockCard.js 
@@ -47,7 +47,7 @@ src/
 │ └── Collection.js 
 ├── App.js 
 └── index.js
-
+```
 ---
 
 ## 📚 Data Sources
