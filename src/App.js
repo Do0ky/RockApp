@@ -25,12 +25,12 @@ const rocksList = [
 function App() {
   return (
     <div>
-      <h1>Rock App</h1>
+      <h1 class="text-center">Rock App</h1>
       {rocksList.map( r => <RockCard rock={r} /> ) }
     </div>
   );
 }
 // rock is an attribute of RockCard => the parameter r is getting put into the prop called rock on the RockCard component
-// This r parameter is will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component
+// This r parameter will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component
 
 export default App;
