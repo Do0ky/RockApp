@@ -1,4 +1,4 @@
-# 🪨 Rock App
+# ⛰️ Rock App
 
 An interactive React-based educational app that helps users explore and identify common rock types.
 Designed for amateur geologists, hikers, students, and curious minds, this app makes geology accessible, engaging, and fun.
