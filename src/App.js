@@ -1,3 +1,5 @@
+import RockCard from "./components/RockCard";
+
 //FAKE DATA TEST testing creating an array
 const rocksList = [
   {
@@ -24,15 +26,11 @@ function App() {
   return (
     <div>
       <h1>Rock App</h1>
-      {rocksList.map( rock => (
-        <div>
-        <h3>{rock.name}</h3>
-        <h5>{rock.category}</h5>
-        <p>{rock.type}</p>
-        </div>
-        ) ) }
+      {rocksList.map( r => <RockCard rock={r} /> ) }
     </div>
   );
 }
+// rock is an attribute of RockCard => the parameter r is getting put into the prop called rock on the RockCard component
+// This r parameter is will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component
 
 export default App;
