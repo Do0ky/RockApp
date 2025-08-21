@@ -1,7 +1,7 @@
 /* Tools */
 import React from 'react'; 
 import ReactDOM from 'react-dom/client'; // Importing ReactDOM for rendering the app
-import { BrowserRouter } from 'react-router-dom'; // Importing BrowserRouter for routing
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importing BrowserRouter for routing
 /* Styling */
 import './index.css'; // Importing the main CSS file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importing Bootstrap CSS for styling
