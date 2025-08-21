@@ -1,4 +1,5 @@
 import RockCard from "./components/RockCard";
+import rocks from "./data/rocks.json"; // Importing the JSON data file
 
 //FAKE DATA TEST testing creating an array
 const rocksList = [
@@ -26,7 +27,7 @@ function App() {
   return (
     <div>
       <h1 class="text-center">Rock App</h1>
-      {rocksList.map( r => <RockCard rock={r} /> ) }
+      {rocks.map( r => <RockCard key={r.id} rock={r} /> ) /* Mapping through the rocks array and creating a RockCard for each rock object */ }
     </div>
   );
 }
