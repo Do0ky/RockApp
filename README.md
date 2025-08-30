@@ -32,8 +32,6 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 
 ---
 
----
-
 ## 🧪 Technologies Used
 
 - **React** (with Hooks)
@@ -91,6 +89,7 @@ npm start
 ---
 
 ## 💡 Potential Future Enhancements
+- 📚 Learn Page (glossary terms and visual guides to understand geology fundamentals and rock classification)
 - 📊 Fetch more data from an API
 - 📸 Image upload for rock identification
 - 🗺️ Map integration to show rock locations
