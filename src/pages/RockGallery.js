@@ -1,6 +1,6 @@
 import React from "react";
 import rocks from "../data/rocks.json"; // Importing the JSON data file
-import RockCard from "./RockCard";
+import RockCard from "../components/RockCard";
 
 function RockGallery() {
     return (

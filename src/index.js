@@ -5,10 +5,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importing Br
 /* Styling */
 import './index.css'; // Importing the main CSS file
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importing Bootstrap CSS for styling
+import 'bootstrap-social/bootstrap-social.css';
+import 'font-awesome/css/font-awesome.css';
+import 'typeface-lobster';
+import 'typeface-open-sans';
 /* Components */
 import App from './App'; // Importing the main App component
-import RockGallery from './components/RockGallery'; 
-import Quiz from './components/Quiz'; // Placeholder for Quiz component
+import RockGallery from './pages/RockGallery'; 
+import Quiz from './pages/Quiz'; // Placeholder for Quiz component
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

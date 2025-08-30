@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'reactstrap'
 const Footer = () => {
     return (
         <footer className='site-footer'>
-            <Container>
-                <Row>
-                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+            <Container fluid>
+                <Row className='justify-content-center'>
+                    <Col xs='4' sm='2' className="text-center">
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -20,7 +20,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col xs='6' sm='3' className='text-center'>
+                    <Col xs='6' sm={{ size: 3, offset: 1 }} className='text-center'>
                         <h5>Social</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
@@ -47,7 +47,7 @@ const Footer = () => {
                             <i className='fa fa-youtube' />
                         </a>
                     </Col>
-                    <Col sm='4' className='text-center'>
+                    <Col sm='3' className='text-center'>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -65,7 +65,7 @@ const Footer = () => {
                         </a>
                     </Col>
                 </Row>
-                <Row>
+                <Row className='justify-content-center'>
                     <Col>
                         Created by Claire Peyre & Aaron Escobar
                     </Col>
