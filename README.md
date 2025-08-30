@@ -7,18 +7,30 @@ Designed for amateur geologists, hikers, students, and curious minds, this app m
 
 ## 🌍 Project Vision
 
-To empower users with a visually intuitive and scientifically grounded tool for learning about rocks—encouraging curiosity, hands-on exploration, and deeper understanding of Earth's materials.
+The **Rock App** empowers users to explore and identify rocks through an intuitive, visually engaging interface. Designed with accessibility and scientific clarity in mind, it blends interactive filtering, search functionality, and personalized collection tools to foster curiosity about geology and natural history.
 
 ---
 
 ## 🚀 Features
 
-- 🔍 **Search & Filter**: Explore rocks by name, type (igneous, sedimentary, metamorphic), or properties.
-- 📋 **Rock Cards**: View detailed information including texture, color, formation, and fun facts.
-- ➕ **User Collection**: Add or remove rocks to build your personal collection.
-- 🧠 **Quiz Mode** *(coming soon)*: Test your knowledge with a “Guess the Rock” game.
-- 💾 **Local Storage**: Save your collection between sessions.
-- 🎨 **Responsive Design**: Optimized for desktop and mobile devices.
+- 🔍 **Search & Filter**  
+  Browse rocks by name, type (igneous, sedimentary, metamorphic), texture, color, and origin using an intuitive interface.
+- 🪨 **Rock Gallery**  
+  Explore a dynamic collection of rock cards with detailed info and fun facts. Click any card to open a modal with deeper insights.
+- 📘 **Rock Detail Modal**  
+  View high-resolution images, geological context, and identification tips—all without leaving the gallery.
+- ➕ **Collection Manager**  
+  Save, tag, and annotate rocks in your personal collection. Perfect for field notes or study references.
+- 🧠 **Quiz Mode**  
+  Test your knowledge with a “Guess the Rock” game. Great for learners and enthusiasts alike.
+- 🧭 **Modular Navigation**  
+  Clean routing between Home, Explore, Collection, Quiz, Learn, and Settings—wrapped in a consistent layout.
+- 💾 **Local Storage** *(coming soon)*  
+  Persist your collection across sessions for offline use and long-term tracking.
+- 🎨 **Responsive Design** *(coming soon)*  
+  Optimized layout and interactions for both desktop and mobile devices.
+
+---
 
 ---
 
@@ -27,25 +39,35 @@ To empower users with a visually intuitive and scientifically grounded tool for 
 - **React** (with Hooks)
 - **JavaScript (ES6+)**
 - **CSS Modules / Styled Components**
-- **React Router** *(optional for multi-page navigation)*
+- **React Router** 
+- **JSON** (rock data source)
 - **Local Storage API**
 
 ---
 
 ## 📁 Project Structure
 ```bash
-src/ 
-├── components/ 
-│ ├── RockCard.js 
-│ ├── FilterPanel.js 
-│ ├── CollectionList.js 
-│ └── QuizModule.js 
-├── data/ 
-│ └── rocks.json 
-├── pages/ 
-│ ├── Home.js 
-│ └── Collection.js 
-├── App.js 
+src/
+├── assets/
+│   └── img/
+│       └── logo.png
+├── components/
+│   ├── RockCard.js
+│   ├── FilterPanel.js
+│   ├── SearchBar.js
+│   ├── RockDetailModal.js
+│   ├── Header.js
+│   ├── Footer.js
+│   ├── CollectionManager.js
+│   └── QuizModule.js
+├── data/
+│   └── rocks.json
+├── pages/
+│   ├── Home.js
+│   ├── Collection.js
+│   ├── RockGallery.js
+│   └── Quiz.js
+├── App.js
 └── index.js
 ```
 ---
@@ -63,7 +85,6 @@ src/
 ## 🛠️ Installation & Setup
 ```bash
 git clone https://github.com/Do0ky/RockApp.git
-cd rock-app
 npm install
 npm start
 ```
