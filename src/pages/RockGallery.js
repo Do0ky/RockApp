@@ -1,14 +1,28 @@
-import React from "react";
 import rocks from "../data/rocks.json"; // Importing the JSON data file
 import RockCard from "../components/RockCard";
+import { useState } from "react"; // Importing useState hook for state management
+import FilterPanel from "../components/FilterPanel";
 
 function RockGallery() {
+
+    const [activeCategories, setActiveCategories] = useState([]); // State to hold the currently active filter categories
+
+    const filteredRocks = activeCategories.length === 0 ? 
+    rocks : rocks.filter( (rock) => activeCategories.includes(rock.category) );
+    // Filtering rocks based on active categories; if none are active, show all rocks
+
     return (
         <div className="rock-gallery">
+
             <h2 className="text-center">Rock Gallery</h2>
+
+            <FilterPanel onFilterChange={setActiveCategories} /> {/* Passing setActiveCategories function as a prop */}
+
             <div className="d-flex flex-wrap justify-content-center">
-                {rocks.map( r => <RockCard key={r.id} rock={r} /> ) /* Mapping through the rocks array and creating a RockCard for each rock object */ }
+                {filteredRocks.map( r => <RockCard key={r.id} rock={r} /> )}
+                {/* Using filteredRocks to display only the rocks that match the active filters */}
             </div>
+
         </div>
     );
 };
