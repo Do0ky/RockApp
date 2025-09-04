@@ -1,6 +1,6 @@
 import { useState } from "react"; // Import useState hook for state management
 
-const FilterPanel = () => {
+const FilterPanel = ( {onFilterChange} ) => {
     // State to manage selected filters
     const [selectedCategories, setSelectedCategories] = useState([]);
 
@@ -14,10 +14,11 @@ const FilterPanel = () => {
         // The previous state is accessed via the callback function's argument (prev)
         // if checked is true, spread the previous array and add the new value
         // if checked is false, filter out the value from the previous array
-        setSelectedCategories( (prev) => checked ? [...prev, value] : prev.filter((cat) => cat !== value) );
-        
-        // Logging the selected categories for debugging 
-        console.log("Selected Categories:", selectedCategories);
+        setSelectedCategories( (prev) => {
+            const updated = checked ? [...prev, value] : prev.filter( (cat) => cat !== value); // Create the updated array based on checkbox status
+            onFilterChange(updated); // Call the onFilterChange prop with the updated categories
+            return updated; // Return the updated array to set it as the new state
+        });  
     };
 
     return (
