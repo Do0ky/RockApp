@@ -16,11 +16,12 @@ function RockGallery() {
 
             <h2 className="text-center">Rock Gallery</h2>
 
-            <FilterPanel onFilterChange={setActiveCategories} /> {/* Passing setActiveCategories function as a prop */}
-
-            <div className="d-flex flex-wrap justify-content-center">
-                {filteredRocks.map( r => <RockCard key={r.id} rock={r} /> )}
-                {/* Using filteredRocks to display only the rocks that match the active filters */}
+            <div className="rock-gallery d-flex">
+                <FilterPanel onFilterChange={setActiveCategories} /> {/* Passing setActiveCategories function as a prop */}
+                <div className="d-flex flex-wrap justify-content-center flex-grow-1">
+                    {/* Using filteredRocks to display only the rocks that match the active filters */}
+                    {filteredRocks.map( r => <RockCard key={r.id} rock={r} /> )}
+                </div>
             </div>
 
         </div>
