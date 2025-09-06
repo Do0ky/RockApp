@@ -18,6 +18,8 @@ const Header = () => {
                 <img src={OhschistLogo} alt='OhSchist! logo' className='float-start' />
             </NavbarBrand>
 
+            <h1 className="text-center">Rock App</h1>
+            
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
                 <Collapse isOpen={menuOpen} navbar>
                     <Nav className='ms-auto' navbar>
