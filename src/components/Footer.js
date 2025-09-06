@@ -48,6 +48,7 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col sm='3' className='text-center'>
+                        <h5>Contact</h5>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -65,7 +66,7 @@ const Footer = () => {
                         </a>
                     </Col>
                 </Row>
-                <Row className='justify-content-center'>
+                <Row className='credits justify-content-center'>
                     <Col>
                         Created by Claire Peyre & Aaron Escobar
                     </Col>
