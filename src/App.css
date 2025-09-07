@@ -19,9 +19,6 @@ h1, h2, h3, .card-body > .card-title {
 h1 {
     font-size: 4rem;
 }
-h2 {
-    color: #7566109c;
-}
 
 /* HOMEPAGE */
 .homepage {
@@ -38,7 +35,7 @@ h2 {
     z-index: -1; /* Ensure it's behind other content */
 }
 
-/* HEADER */
+/* HOMEPAGE HEADER */
 .navbar-brand {
     max-width: 10rem;
     margin-right: 2rem;
@@ -53,7 +50,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.253);
     color: black;
     margin-bottom: 2rem;
-    min-height: 8rem;
+    min-height: 7rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: absolute;
     top: 0;
@@ -61,23 +58,51 @@ h2 {
     width: 100%;
     z-index: 10; /* Ensure it stays above other content */
 }
+.navbar-dark .nav-link {
+  color: black !important; /* Overrides bootstrap default */
 
-.card-title {
-    font-weight: 500;
-    font-size: 1.25rem;
+}
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link:focus {
+  color: #5c3b4b !important;
+  text-decoration: underline;
+}
+.navbar-dark .nav-link.active {
+  font-weight: bold;
+  color: #000 !important;
 }
 
-.card-img-overlay .card-title {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+/* CARDS GALLERY QUIZ */
+.entry-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: calc(100vh - 8rem); /* full viewport minus header height */
+  flex-wrap: wrap;
+}
+.entry-card {
+  color: #4b313e;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(197, 191, 184, 0.664);
+  border: 2px solid #5c3b4b;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(1px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.entry-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
 
+/* HOMEPAGE FOOTER */
 .site-footer {
     display: flex;
     background-color: #000000;
@@ -109,6 +134,25 @@ h2 {
     color: #db949491;
     margin-top: 10px;
 }
+
+/* ROCK CARDS */
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.card-img-overlay .card-title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+
 
 .page-enter {
     opacity: 0;
