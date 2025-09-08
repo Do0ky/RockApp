@@ -31,7 +31,9 @@ function App() {
           
       </div>
 
-      <Footer />
+      <div className='footer-spacer'>
+        <Footer />
+      </div>
 
     </div>
   );
