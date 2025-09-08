@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app-container">
 
-      <div className="home-background"> {/* purely visual layer */}
+      <div className="home-background" /> {/* purely visual layer self-closing */}
 
         <Header />
 
@@ -28,8 +28,6 @@ function App() {
               </div>
 
           </div>
-          
-      </div>
 
       <div className='footer-spacer'>
         <Footer />
