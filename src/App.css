@@ -2,13 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rationale&family=Unica+One&display=swap');
 
 html, body, #root {
-    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Rationale', sans-serif;
 }
 .app-container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -22,16 +20,20 @@ h1 {
 
 /* HOMEPAGE */
 .homepage {
+  position: relative;
+  z-index: 1;
   padding-top: 10rem; /* superior to header height because header absolute: removed from the flow*/
-  padding-bottom: 100px;
 }
 .home-background {
     height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url('app/assets/img/Homepage_Background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
     z-index: -1; /* Ensure it's behind other content */
 }
 
@@ -78,7 +80,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: calc(100vh - 8rem); /* full viewport minus header height */
+  height: calc(100vh - 12rem); 
   flex-wrap: wrap;
 }
 .entry-card {
@@ -94,6 +96,7 @@ h1 {
   text-align: center;
   backdrop-filter: blur(1px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
 }
 .entry-card:hover {
   transform: scale(1.05);
@@ -103,12 +106,15 @@ h1 {
 
 
 /* HOMEPAGE FOOTER */
+.footer-spacer {
+  height: 100vh; /* Spacer to push footer to bottom */
+}
 .site-footer {
+    margin-top: 100vh;
     display: flex;
     background-color: #000000;
     text-align: center;
     padding: 20px 0;
-    margin-top: auto;
     flex-direction: column;
     align-items: center;
 }
