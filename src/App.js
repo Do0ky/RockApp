@@ -11,23 +11,23 @@ function App() {
 
       <div className="home-background" /> {/* purely visual layer self-closing */}
 
-        <Header />
+      <Header />
 
-          <div className="homepage text-center"> {/* main content layer */}
+        <div className="homepage text-center"> {/* main content container */}
 
-              <div className="entry-options"> {/* flex container entry cards */}
+            <div className="entry-options"> {/* flex container entry cards */}
 
-                <div className='entry-card' onClick={() => navigate('/gallery')}>
-                  <h2>Enter Rock Gallery</h2>
-                </div>
-
-                <div className='entry-card' onClick={() => navigate('/quiz')}>
-                  <h2>Take the Rock Quiz</h2>
-                </div>
-                
+              <div className='entry-card' onClick={() => navigate('/gallery')}>
+                <h2>Enter Rock Gallery</h2>
               </div>
 
-          </div>
+              <div className='entry-card' onClick={() => navigate('/quiz')}>
+                <h2>Take the Rock Quiz</h2>
+              </div>
+              
+            </div>
+
+        </div>
 
       <div className='footer-spacer'>
         <Footer />
