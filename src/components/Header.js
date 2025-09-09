@@ -8,6 +8,7 @@ import {
     NavItem
 } from 'reactstrap';
 import Logo from '../app/assets/img/Logo_01.png';
+import Title from '../app/assets/img/Header_Title.png';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -15,10 +16,11 @@ const Header = () => {
     return (
         <Navbar dark sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={Logo} alt='The Rock App Logo' className='float-start' />
+                <div className='brand-wrapper'>
+                    <img src={Logo} alt='The Rock App Logo' className='header-logo' />
+                    <img src={Title} alt='ROCK APP' className='header-title' />
+                </div>
             </NavbarBrand>
-
-            <h1 className="text-center">Rock App</h1>
             
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
                 <Collapse isOpen={menuOpen} navbar>

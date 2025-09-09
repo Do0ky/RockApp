@@ -40,17 +40,25 @@ h1 {
 }
 
 /* HOMEPAGE HEADER */
-.navbar-brand {
-    max-width: 10rem;
-    margin-right: 2rem;
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Match navbar height */
+  gap: 1rem; /* Space between logo and title */
 }
-.navbar-brand img {
-    width: 100%;
-    height: 100%;
-    margin-right: 2rem;
-    max-width: 8rem;
+.header-logo {
+  max-height: 7rem;
+  width: auto;
+}
+.header-title {
+  max-height: 35rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 .navbar-dark {
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.253);
     color: black;
     margin-bottom: 2rem;
