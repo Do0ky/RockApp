@@ -15,12 +15,12 @@ h1, h2, h3, .card-body > .card-title {
     font-weight: 900;
 }
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 /* HOMEPAGE */
 .home-background { /* Visual background only */
-    height: 100vh;
+    height: 102vh;
     width: 100%;
     position: absolute;
     top: 0;
@@ -54,7 +54,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.253);
     color: black;
     margin-bottom: 2rem;
-    min-height: 7rem;
+    height: 7rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: absolute;
     top: 0;
@@ -64,6 +64,7 @@ h1 {
 }
 .navbar-dark .nav-link {
   color: black !important; /* Overrides bootstrap default */
+  font-size: 1.3rem;
 
 }
 .navbar-dark .nav-link:hover,
@@ -108,7 +109,7 @@ h1 {
 
 /* HOMEPAGE FOOTER */
 .site-footer {
-    margin-top: auto;
+    margin-top: 0;
     display: flex;
     background-color: #000000;
     text-align: center;
