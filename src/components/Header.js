@@ -7,7 +7,7 @@ import {
     Nav,
     NavItem
 } from 'reactstrap';
-import OhschistLogo from '../app/assets/img/Ohschist_logo_2016.jpg';
+import Logo from '../app/assets/img/Logo_01.png';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <Navbar dark sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={OhschistLogo} alt='OhSchist! logo' className='float-start' />
+                <img src={Logo} alt='The Rock App Logo' className='float-start' />
             </NavbarBrand>
 
             <h1 className="text-center">Rock App</h1>
