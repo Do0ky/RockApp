@@ -3,6 +3,7 @@ import RockCard from "../components/RockCard";
 import { useMemo, useState } from "react"; // Importing useState hook for state management
 import FilterPanel from "../components/FilterPanel";
 import RockSearch from "../components/SearchPanel";
+import RockDetailModal from "../components/RockDetailModal";
 
 function RockGallery() {
     
@@ -21,6 +22,7 @@ function RockGallery() {
     });
     }, [filters]);
 
+
     /* SEARCH */
     // Search state and fields
     const [query, setQuery] = useState(""); // State to hold the current search, initially empty string
@@ -37,10 +39,16 @@ function RockGallery() {
         ));
     }, [query, filteredRocks]);
 
-    /* SORTING CARDS BY ALPHABETICAL ORDER */
+    /* SORT CARDS BY ALPHABETICAL ORDER */
     const sortedRocks = useMemo( () => {
         return [...visibleRocks].sort( (a, b) => a.name.localeCompare(b.name) );
-        }, [visibleRocks]);
+    }, [visibleRocks]);
+    
+    
+    // Lift state for modal management
+    const [selectedRock, setSelectedRock] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
 
     return (
         <div className="rock-gallery">
@@ -54,13 +62,28 @@ function RockGallery() {
                 <FilterPanel onFilterChange={setFilters} /> {/* Passing setFilters function as a prop */}
 
                 <div className="d-flex flex-wrap justify-content-center flex-grow-1">
-                    {/* Using filteredRocks to display only the rocks that match the active filters */}
-                    {sortedRocks.map( r => <RockCard key={r.id} rock={r} /> )}
+                    {/* Using sortedRocks to display only the rocks that match the active filters */}
+                    {sortedRocks.map( r => 
+                    <RockCard 
+                        key={r.id} 
+                        rock={r} 
+                        onClick={ () => {
+                            setSelectedRock(r);
+                            setIsModalOpen(true);
+                        }} /> )}
                     {/* rock is an attribute of RockCard. The parameter r is getting put into the prop called rock on the RockCard component */}
                     {/* This r parameter will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component */}
                 </div>
 
             </div>
+        
+        {selectedRock && ( <RockDetailModal
+                rock={selectedRock}
+                onClose={() => {
+                setSelectedRock(null);
+                setIsModalOpen(false);
+                }}
+            /> )}
 
         </div>
     )
