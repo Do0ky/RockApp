@@ -11,7 +11,8 @@ const FilterPanel = ( {onFilterChange} ) => {
     onFilterChange({ categories: selectedCategories, types: selectedTypes });
     }, [selectedCategories, selectedTypes]);
 
-    // Function to handle category changes (will add or remove a category from the array when a checkbox is toggled)
+    /* Function to handle category changes */
+    // will add or remove a category from the array when a checkbox is toggled
     const handleCategoryChange = (event) => {
         // Destructure value and checked properties from the event target
         const { value, checked } = event.target;
@@ -26,18 +27,28 @@ const FilterPanel = ( {onFilterChange} ) => {
             // Create the updated array based on checkbox status
         );
     };
-
+     /* Similar function to handle type changes */
     const handleTypeChange = (event) => {
-        const { value, checked } = event.target;
+        const { value, checked } = event.target; 
 
         setSelectedTypes( (prev) => 
             checked ? [...prev, value] : prev.filter( (type) => type !== value)
         );
     };
 
+    /* Function to reset all filters */
+    const handleReset = () => {
+        setSelectedCategories([]);
+        setSelectedTypes([]);
+    };
+    // Determine if any filter is active for UI (if none, disable reset button)
+    const isFilterActive = selectedCategories.length > 0 || selectedTypes.length > 0;
+
     return (
         <div className="filter-panel">
+
             <h2>Filter</h2>
+
             <h4>By Category</h4>
             <div className="filter-options">
                 <label>
@@ -53,7 +64,9 @@ const FilterPanel = ( {onFilterChange} ) => {
                     Metamorphic
                 </label>
             </div>
+
             <br />
+
             <h4>By Type</h4>
             <div className="filter-options">
                 <label>
@@ -69,6 +82,11 @@ const FilterPanel = ( {onFilterChange} ) => {
                     Organic
                 </label>
             </div>
+
+            <button onClick={handleReset} disabled={!isFilterActive} className="btn btn-outline-secondary mt-3">
+                Clear Filters
+            </button>
+
         </div>
     );
 };
