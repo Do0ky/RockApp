@@ -24,7 +24,6 @@ function RockGallery() {
     /* SEARCH */
     // Search state and fields
     const [query, setQuery] = useState(""); // State to hold the current search, initially empty string
-    
     // Text search layered on the category-filtered list
     const  visibleRocks = useMemo( () => {
         const searchFields = ["name", "type", "category", "texture", ]; // from JSON
@@ -38,9 +37,14 @@ function RockGallery() {
         ));
     }, [query, filteredRocks]);
 
+    /* SORTING CARDS BY ALPHABETICAL ORDER */
+    const sortedRocks = useMemo( () => {
+        return [...visibleRocks].sort( (a, b) => a.name.localeCompare(b.name) );
+        }, [visibleRocks]);
+
     return (
         <div className="rock-gallery">
-            <h2 className="text-center">Rock Gallery</h2>
+            <h1 className="text-center">Rock Gallery</h1>
             
             <div className="d-flex justify-content-center my-3">
                 <RockSearch query={query} setQuery={setQuery} />
@@ -51,7 +55,7 @@ function RockGallery() {
 
                 <div className="d-flex flex-wrap justify-content-center flex-grow-1">
                     {/* Using filteredRocks to display only the rocks that match the active filters */}
-                    {visibleRocks.map( r => <RockCard key={r.id} rock={r} /> )}
+                    {sortedRocks.map( r => <RockCard key={r.id} rock={r} /> )}
                     {/* rock is an attribute of RockCard. The parameter r is getting put into the prop called rock on the RockCard component */}
                     {/* This r parameter will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component */}
                 </div>
