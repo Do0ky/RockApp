@@ -1,0 +1,25 @@
+
+// prop rock is being passed in from RockGallery.js for rock details
+// prop isOpen is being passed in from RockGallery.js for modal visibility
+// prop onClose is being passed in from RockGallery.js for closing the modal
+const RockDetailModal = ( {rock, onClose} ) => {
+    if (!rock) return null;
+
+    return (
+        <div className="modal-overlay" onClick={onClose}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+
+                <button className="close-button" onClick={onClose}>×</button>
+
+                <h2>{rock.name}</h2>
+                <p><strong>Category:</strong> {rock.category}</p>
+                <p><strong>Type:</strong> {rock.type}</p>
+                <p><strong>Color:</strong> {rock.color}</p>
+                <p><strong>Texture:</strong> {rock.texture}</p>
+                <p><strong>Fun Fact:</strong> {rock.funFact}</p>
+            </div>
+        </div>
+    );
+};
+
+export default RockDetailModal;
