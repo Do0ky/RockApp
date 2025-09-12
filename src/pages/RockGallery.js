@@ -5,23 +5,34 @@ import FilterPanel from "../components/FilterPanel";
 import RockSearch from "../components/SearchPanel";
 
 function RockGallery() {
-
-    const [activeCategories, setActiveCategories] = useState([]); // State to hold the currently active filter categories
-
-    const filteredRocks = activeCategories.length === 0 ? 
-    rocks : rocks.filter( (rock) => activeCategories.includes(rock.category) );
-    // Filtering rocks based on active categories; if none are active, show all rocks
-
-    // Search state and fields
-    const [query, setQuery] = useState("");
     
-    // text search layered on the category-filtered list
-    const  visibleRocks = useMemo(() => {
+    /* FILTERS */
+    const [filters, setFilters] = useState({ categories: [], types: [] }); // State to hold the currently active filters: holds both filters together in an object
+
+    // Function to update filters state when FilterPanel changes
+    // If no filters are selected, it resets to empty arrays (all rocks shown)
+    // If filters are selected, rocks must match both category and type to be shown
+    const filteredRocks = useMemo( () => {
+    const { categories, types } = filters;
+    return rocks.filter( (rock) => {
+        const categoryMatch = categories.length === 0 || categories.includes(rock.category);
+        const typeMatch = types.length === 0 || types.includes(rock.type);
+        return categoryMatch && typeMatch;
+    });
+    }, [filters]);
+
+    /* SEARCH */
+    // Search state and fields
+    const [query, setQuery] = useState(""); // State to hold the current search, initially empty string
+    
+    // Text search layered on the category-filtered list
+    const  visibleRocks = useMemo( () => {
         const searchFields = ["name", "type", "category", "texture", ]; // from JSON
         const q = query.trim().toLowerCase();
+        // If no search query, return the filteredRocks as is
         if (!q) return filteredRocks;
-
-        return filteredRocks.filter((rock) =>
+        // Otherwise, filter the already category/type-filtered rocks by the search query
+        return filteredRocks.filter( (rock) =>
         searchFields.some((field) =>
             String(rock[field] ?? "").toLowerCase().includes(q)
         ));
@@ -36,7 +47,7 @@ function RockGallery() {
             </div>
 
             <div className="rock-gallery d-flex">
-                <FilterPanel onFilterChange={setActiveCategories} /> {/* Passing setActiveCategories function as a prop */}
+                <FilterPanel onFilterChange={setFilters} /> {/* Passing setFilters function as a prop */}
 
                 <div className="d-flex flex-wrap justify-content-center flex-grow-1">
                     {/* Using filteredRocks to display only the rocks that match the active filters */}
