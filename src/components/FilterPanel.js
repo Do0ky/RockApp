@@ -1,11 +1,18 @@
 import { useState } from "react"; // Import useState hook for state management
+import { useEffect } from "react"; // Import useEffect hook to handle side effects
 
 const FilterPanel = ( {onFilterChange} ) => {
     // State to manage selected filters
     const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedTypes, setSelectedTypes] = useState([]);
+
+    // Effect to call onFilterChange whenever selectedCategories or selectedTypes change
+    useEffect(() => {
+    onFilterChange({ categories: selectedCategories, types: selectedTypes });
+    }, [selectedCategories, selectedTypes]);
 
     // Function to handle category changes (will add or remove a category from the array when a checkbox is toggled)
-    const handleCheckboxChange = (event) => {
+    const handleCategoryChange = (event) => {
         // Destructure value and checked properties from the event target
         const { value, checked } = event.target;
 
@@ -14,28 +21,52 @@ const FilterPanel = ( {onFilterChange} ) => {
         // The previous state is accessed via the callback function's argument (prev)
         // if checked is true, spread the previous array and add the new value
         // if checked is false, filter out the value from the previous array
-        setSelectedCategories( (prev) => {
-            const updated = checked ? [...prev, value] : prev.filter( (cat) => cat !== value); // Create the updated array based on checkbox status
-            onFilterChange(updated); // Call the onFilterChange prop with the updated categories
-            return updated; // Return the updated array to set it as the new state
-        });  
+        setSelectedCategories( (prev) =>
+            checked ? [...prev, value] : prev.filter( (cat) => cat !== value)
+            // Create the updated array based on checkbox status
+        );
+    };
+
+    const handleTypeChange = (event) => {
+        const { value, checked } = event.target;
+
+        setSelectedTypes( (prev) => 
+            checked ? [...prev, value] : prev.filter( (type) => type !== value)
+        );
     };
 
     return (
         <div className="filter-panel">
-            <h2>Filter by Category</h2>
+            <h2>Filter</h2>
+            <h4>By Category</h4>
             <div className="filter-options">
                 <label>
-                    <input type="checkbox" value="Igneous" onChange={handleCheckboxChange} checked={selectedCategories.includes("Igneous")} />
+                    <input type="checkbox" value="Igneous" onChange={handleCategoryChange} checked={selectedCategories.includes("Igneous")} />
                     Igneous
                 </label>
                 <label>
-                    <input type="checkbox" value="Sedimentary" onChange={handleCheckboxChange} checked={selectedCategories.includes("Sedimentary")} />
+                    <input type="checkbox" value="Sedimentary" onChange={handleCategoryChange} checked={selectedCategories.includes("Sedimentary")} />
                     Sedimentary
                 </label>
                 <label>
-                    <input type="checkbox" value="Metamorphic" onChange={handleCheckboxChange} checked={selectedCategories.includes("Metamorphic")} />
+                    <input type="checkbox" value="Metamorphic" onChange={handleCategoryChange} checked={selectedCategories.includes("Metamorphic")} />
                     Metamorphic
+                </label>
+            </div>
+            <br />
+            <h4>By Type</h4>
+            <div className="filter-options">
+                <label>
+                    <input type="checkbox" value="Chemical" onChange={handleTypeChange} checked={selectedTypes.includes("Chemical")} />
+                    Chemical
+                </label>
+                <label>
+                    <input type="checkbox" value="Clastic" onChange={handleTypeChange} checked={selectedTypes.includes("Clastic")} />
+                    Clastic
+                </label>
+                <label>
+                    <input type="checkbox" value="Organic" onChange={handleTypeChange} checked={selectedTypes.includes("Organic")} />
+                    Organic
                 </label>
             </div>
         </div>
