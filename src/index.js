@@ -11,7 +11,7 @@ import 'typeface-lobster';
 import 'typeface-open-sans';
 /* Components */
 import App from './App'; // Importing the main App component
-import RockGallery from './pages/RockGallery'; 
+import CollectionManager from './components/CollectionManager';
 import Quiz from './pages/Quiz'; // Placeholder for Quiz component
 
 
@@ -22,7 +22,7 @@ root.render(
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/gallery" element={<RockGallery />} />
+        <Route path="/gallery" element={<CollectionManager />} />
         <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </React.StrictMode>
