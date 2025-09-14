@@ -66,13 +66,13 @@ const RockGallery = ( {addToCollection, removeFromCollection, collection, goToCo
                 <RockSearch query={query} setQuery={setQuery} />
             </div>
 
-            <div className="rock-gallery d-flex">
+            <div className="d-flex align-items-start">
                 <FilterPanel onFilterChange={setFilters} /> {/* Passing setFilters function as a prop */}
 
                 <div className="d-flex flex-wrap justify-content-center flex-grow-1">
                     {/* Using sortedRocks to display only the rocks that match the active filters */}
                     {sortedRocks.map( r => 
-                    <RockCard 
+                    <RockCard
                         key={r.id} 
                         rock={r} 
                         onClick={ () => {setSelectedRock(r);}} /> )}
