@@ -4,9 +4,11 @@ import { useMemo, useState } from "react"; // Importing useState hook for state 
 import FilterPanel from "../components/FilterPanel";
 import RockSearch from "../components/SearchPanel";
 import RockDetailModal from "../components/RockDetailModal";
+import { useNavigate } from "react-router-dom";
 
 const RockGallery = ( {addToCollection, removeFromCollection, collection, goToCollection} ) => {
-console.log("RockGallery props:", { addToCollection });
+    /* NAVIGATE */
+    const navigate = useNavigate();
 
     /* FILTERS */
     const [filters, setFilters] = useState({ categories: [], types: [] }); // State to hold the currently active filters: holds both filters together in an object
@@ -21,7 +23,6 @@ console.log("RockGallery props:", { addToCollection });
         return categoryMatch && typeMatch;
     });
     }, [filters]);
-
 
     /* SEARCH */
     // Search state and fields
@@ -53,8 +54,11 @@ console.log("RockGallery props:", { addToCollection });
             <h1 className="text-center">Rock Gallery</h1>
 
             <div className="text-center my-3">
-                <button className="collection-button" onClick={goToCollection}>
-                To Rock Collection
+                <button className="collection-button mx-2" onClick={goToCollection}>
+                    To Rock Collection
+                </button>
+                <button className="collection-button mx-2" onClick={() => navigate("/")}>
+                    Back to Home
                 </button>
             </div>
 
@@ -78,8 +82,8 @@ console.log("RockGallery props:", { addToCollection });
 
             </div>
         
-        {/* Passing the props to the RockDetailModal component */}
-        {selectedRock && ( <RockDetailModal
+            {/* Passing the props to the RockDetailModal component */}
+            {selectedRock && ( <RockDetailModal
                 rock={selectedRock}
                 collection={collection}
                 onAddToCollection={ () => {

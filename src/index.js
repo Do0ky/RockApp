@@ -15,7 +15,6 @@ import CollectionManager from './components/CollectionManager';
 import Quiz from './pages/Quiz'; // Placeholder for Quiz component
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
