@@ -5,11 +5,11 @@ import FilterPanel from "../components/FilterPanel";
 import RockSearch from "../components/SearchPanel";
 import RockDetailModal from "../components/RockDetailModal";
 
-function RockGallery() {
-    
+const RockGallery = ( {addToCollection, removeFromCollection, collection, goToCollection} ) => {
+console.log("RockGallery props:", { addToCollection });
+
     /* FILTERS */
     const [filters, setFilters] = useState({ categories: [], types: [] }); // State to hold the currently active filters: holds both filters together in an object
-
     // Function to update filters state when FilterPanel changes
     // If no filters are selected, it resets to empty arrays (all rocks shown)
     // If filters are selected, rocks must match both category and type to be shown
@@ -44,16 +44,20 @@ function RockGallery() {
         return [...visibleRocks].sort( (a, b) => a.name.localeCompare(b.name) );
     }, [visibleRocks]);
     
-    
     // Lift state for modal management
     const [selectedRock, setSelectedRock] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
 
     return (
         <div className="rock-gallery">
             <h1 className="text-center">Rock Gallery</h1>
-            
+
+            <div className="text-center my-3">
+                <button className="collection-button" onClick={goToCollection}>
+                To Rock Collection
+                </button>
+            </div>
+
             <div className="d-flex justify-content-center my-3">
                 <RockSearch query={query} setQuery={setQuery} />
             </div>
@@ -67,22 +71,23 @@ function RockGallery() {
                     <RockCard 
                         key={r.id} 
                         rock={r} 
-                        onClick={ () => {
-                            setSelectedRock(r);
-                            setIsModalOpen(true);
-                        }} /> )}
+                        onClick={ () => {setSelectedRock(r);}} /> )}
                     {/* rock is an attribute of RockCard. The parameter r is getting put into the prop called rock on the RockCard component */}
                     {/* This r parameter will be given to each RockCard it creates by mapping, in a rock prop. And then it can be accessed in the RockCard component */}
                 </div>
 
             </div>
         
+        {/* Passing the props to the RockDetailModal component */}
         {selectedRock && ( <RockDetailModal
                 rock={selectedRock}
-                onClose={() => {
-                setSelectedRock(null);
-                setIsModalOpen(false);
-                }}
+                collection={collection}
+                onAddToCollection={ () => {
+                    console.log("selectedRock:", selectedRock);
+                    console.log("addToCollection:", addToCollection);
+                    if (selectedRock) addToCollection(selectedRock);} }
+                onRemoveFromCollection={ () => {if (selectedRock) removeFromCollection(selectedRock);} }
+                onClose={ () => {setSelectedRock(null);}}
             /> )}
 
         </div>
