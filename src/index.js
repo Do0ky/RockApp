@@ -10,9 +10,9 @@ import 'font-awesome/css/font-awesome.css';
 import 'typeface-lobster';
 import 'typeface-open-sans';
 /* Components */
-import Home from './pages/Home';
+import App from './App'; // Importing the main App component
 import CollectionManager from './components/CollectionManager';
-import Quiz from './pages/Quiz';
+import Quiz from './pages/Quiz'; // Placeholder for Quiz component
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,7 +20,7 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<App />} />
         <Route path="/gallery" element={<CollectionManager />} />
         <Route path="/quiz" element={<Quiz />} />
       </Routes>
