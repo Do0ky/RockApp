@@ -1,8 +1,8 @@
 
 // prop rock is being passed in from RockGallery.js for rock details
-// prop isOpen is being passed in from RockGallery.js for modal visibility
 // prop onClose is being passed in from RockGallery.js for closing the modal
-const RockDetailModal = ( {rock, onClose} ) => {
+// prop onAddToCollection is being passed in from RockGallery.js for adding rock to collection
+const RockDetailModal = ( {rock, onClose, onAddToCollection} ) => {
     if (!rock) return null;
 
     return (
@@ -17,6 +17,8 @@ const RockDetailModal = ( {rock, onClose} ) => {
                 <p><strong>Color:</strong> {rock.color}</p>
                 <p><strong>Texture:</strong> {rock.texture}</p>
                 <p><strong>Fun Fact:</strong> {rock.funFact}</p>
+
+                <button className="collection-button" onClick={onAddToCollection}>Add to Collection</button>
             </div>
         </div>
     );
