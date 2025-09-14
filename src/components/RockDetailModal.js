@@ -1,9 +1,15 @@
-
 // prop rock is being passed in from RockGallery.js for rock details
 // prop onClose is being passed in from RockGallery.js for closing the modal
 // prop onAddToCollection is being passed in from RockGallery.js for adding rock to collection
-const RockDetailModal = ( {rock, onClose, onAddToCollection} ) => {
+const RockDetailModal = ( {rock, collection, onClose, onAddToCollection, onRemoveFromCollection} ) => {
+    // If no rock is provided, don't render the modal
     if (!rock) return null;
+
+    // Check if the rock is already in the collection
+    const isInCollection = Array.isArray(collection) && collection.some(r => r.id === rock.id);
+
+    console.log("Modal props:", { onRemoveFromCollection });
+    console.log("Selected rock in modal:", rock);
 
     return (
         <div className="modal-overlay" onClick={onClose}>
@@ -18,7 +24,12 @@ const RockDetailModal = ( {rock, onClose, onAddToCollection} ) => {
                 <p><strong>Texture:</strong> {rock.texture}</p>
                 <p><strong>Fun Fact:</strong> {rock.funFact}</p>
 
-                <button className="collection-button" onClick={onAddToCollection}>Add to Collection</button>
+                {isInCollection ? (
+                <button onClick={onRemoveFromCollection}>Remove from Collection</button>
+                ) : (
+                <button onClick={onAddToCollection}>Add to Collection</button>
+                )}
+
             </div>
         </div>
     );
