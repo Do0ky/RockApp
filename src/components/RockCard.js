@@ -1,7 +1,7 @@
 
 const RockCard = ( {rock, onClick, onRemove} ) => {
     return (
-        <div className="rock-card text-light bg-gradient rounded-2 p-5 m-2" onClick={onClick}>
+        <div className="rock-card bg-gradient rounded-2 p-5 m-2" onClick={onClick}>
             <h3>{rock.name}</h3>
             <h5>{rock.category}</h5>
             <p>{rock.type}</p>
