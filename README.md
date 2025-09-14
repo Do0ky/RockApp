@@ -35,8 +35,8 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 ## 🧪 Technologies Used
 
 - **React** (with Hooks)
-- **JavaScript (ES6+)**
-- **CSS Modules / Styled Components**
+- **JavaScript** (ES6+)
+- **CSS** (global stylesheet)
 - **React Router** 
 - **JSON** (rock data source)
 - **Local Storage API**
@@ -48,7 +48,6 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 src/
 ├── assets/
 │   └── img/
-│       └── logo.png
 ├── components/
 │   ├── RockCard.js
 │   ├── FilterPanel.js
@@ -61,8 +60,7 @@ src/
 ├── data/
 │   └── rocks.json
 ├── pages/
-│   ├── Home.js
-│   ├── Collection.js
+│   ├── RockCollection.js
 │   ├── RockGallery.js
 │   └── Quiz.js
 ├── App.js
