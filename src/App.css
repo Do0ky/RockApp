@@ -1,3 +1,31 @@
+/* QUIZ SUBHEADER LINK */
+.quiz-back-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #4b313e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.quiz-back-link:hover, .quiz-back-link:focus {
+  color: #5c3b4b;
+  text-decoration: underline;
+}
+/* QUIZ HIGHLIGHT STYLES */
+.quiz-answer-btn.selected-answer {
+  background-color: #ffd3ee !important;
+  border: 2px solid #5c3b4b !important;
+  color: #4b313e !important;
+  box-shadow: 0 0 8px #ae988b99;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.quiz-next-btn.quiz-next-animate {
+  background-color: #ae988b !important;
+  color: #4b313e !important;
+  box-shadow: 0 0 12px #ae988b99;
+  transition: background 0.2s, box-shadow 0.2s;
+}
 /* APP & BODY */
 @import url('https://fonts.googleapis.com/css2?family=Rationale&family=Unica+One&display=swap');
 
@@ -20,17 +48,17 @@ h1 {
 
 /* HOMEPAGE */
 .home-background { /* Visual background only */
-    height: 102vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url('app/assets/img/Homepage_Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1; /* Ensure it's behind other content */
-    pointer-events: none; /* disables interaction */
+  height: 102vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url('app/assets/img/Homepage_Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure it's behind other content */
+  /* pointer-events: none;  <-- removed to allow interaction */
 }
 .homepage { /* Main content container */
   min-height: 100vh;
