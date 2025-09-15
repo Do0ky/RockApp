@@ -6,7 +6,8 @@
     "type": "Chemical",
     "color": "Light gray to pink",
     "texture": "Coarse-grained",
-    "funFact": "Forms from slowly cooled magma deep underground."
+    "funFact": "Forms from slowly cooled magma deep underground.",
+    "image": "/assets/img/01_granite.jpg"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "type": "Chemical",
     "color": "Dark gray to black",
     "texture": "Fine-grained",
-    "funFact": "Makes up most of the ocean floor."
+    "funFact": "Makes up most of the ocean floor.",
+    "image": "/assets/img/02_basalt.jpg"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "type": "Chemical",
     "color": "Black",
     "texture": "Glassy",
-    "funFact": "Cools so quickly that crystals don’t form."
+    "funFact": "Cools so quickly that crystals don’t form.",
+    "image": "/assets/img/03_obsidian.jpg"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "type": "Chemical",
     "color": "Light gray",
     "texture": "Porous",
-    "funFact": "Can float on water due to trapped gas bubbles."
+    "funFact": "Can float on water due to trapped gas bubbles.",
+    "image": "/assets/img/04_pumice.jpg"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "type": "Chemical",
     "color": "Gray",
     "texture": "Fine-grained",
-    "funFact": "Common in volcanic arcs above subduction zones."
+    "funFact": "Common in volcanic arcs above subduction zones.",
+    "image": "/assets/img/05_andesite.jpg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "type": "Chemical",
     "color": "Black and white speckled",
     "texture": "Coarse-grained",
-    "funFact": "Used by ancient civilizations for sculpture."
+    "funFact": "Used by ancient civilizations for sculpture.",
+    "image": "/assets/img/06_diorite.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "type": "Chemical",
     "color": "Pink to gray",
     "texture": "Fine-grained",
-    "funFact": "Has the same composition as granite but cools faster."
+    "funFact": "Has the same composition as granite but cools faster.",
+    "image": "/assets/img/07_rhyolite.jpg"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "type": "Chemical",
     "color": "Dark green to black",
     "texture": "Coarse-grained",
-    "funFact": "Forms deep beneath the Earth's surface."
+    "funFact": "Forms deep beneath the Earth's surface.",
+    "image": "/assets/img/08_gabbro.jpg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "type": "Chemical",
     "color": "Dark red to black",
     "texture": "Vesicular",
-    "funFact": "Often used in landscaping and drainage."
+    "funFact": "Often used in landscaping and drainage.",
+    "image": "/assets/img/09_scoria.jpg"
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "type": "Chemical",
     "color": "Varied",
     "texture": "Very coarse-grained",
-    "funFact": "Can contain rare minerals like tourmaline and beryl."
+    "funFact": "Can contain rare minerals like tourmaline and beryl.",
+    "image": "/assets/img/10_pegmatite.jpg"
   },
 
   {
@@ -97,7 +107,8 @@
     "type": "Clastic",
     "color": "Tan to reddish",
     "texture": "Medium-grained",
-    "funFact": "Formed from compacted sand particles."
+    "funFact": "Formed from compacted sand particles.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 12,
@@ -106,7 +117,8 @@
     "type": "Clastic",
     "color": "Gray to black",
     "texture": "Fine-grained",
-    "funFact": "Often contains fossils and splits easily into layers."
+    "funFact": "Often contains fossils and splits easily into layers.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 13,
@@ -115,7 +127,8 @@
     "type": "Organic",
     "color": "White to gray",
     "texture": "Fine-grained",
-    "funFact": "Often formed from marine organisms’ shells."
+    "funFact": "Often formed from marine organisms’ shells.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 14,
@@ -124,7 +137,8 @@
     "type": "Clastic",
     "color": "Varied",
     "texture": "Coarse-grained",
-    "funFact": "Contains rounded pebbles cemented together."
+    "funFact": "Contains rounded pebbles cemented together.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 15,
@@ -133,7 +147,8 @@
     "type": "Clastic",
     "color": "Varied",
     "texture": "Coarse-grained",
-    "funFact": "Similar to conglomerate but with angular fragments."
+    "funFact": "Similar to conglomerate but with angular fragments.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 16,
@@ -142,7 +157,8 @@
     "type": "Organic",
     "color": "White",
     "texture": "Soft and powdery",
-    "funFact": "Made from microscopic marine plankton."
+    "funFact": "Made from microscopic marine plankton.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 17,
@@ -151,7 +167,8 @@
     "type": "Chemical",
     "color": "Gray to pink",
     "texture": "Fine-grained",
-    "funFact": "Similar to limestone but contains magnesium."
+    "funFact": "Similar to limestone but contains magnesium.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 18,
@@ -160,7 +177,8 @@
     "type": "Clastic",
     "color": "Brown to gray",
     "texture": "Very fine-grained",
-    "funFact": "Formed from silt-sized particles in calm water."
+    "funFact": "Formed from silt-sized particles in calm water.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 19,
@@ -169,7 +187,8 @@
     "type": "Organic",
     "color": "Black",
     "texture": "Brittle",
-    "funFact": "Formed from ancient plant material in swamps."
+    "funFact": "Formed from ancient plant material in swamps.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 20,
@@ -178,7 +197,8 @@
     "type": "Chemical",
     "color": "White to transparent",
     "texture": "Soft and crystalline",
-    "funFact": "Forms from evaporated saline water."
+    "funFact": "Forms from evaporated saline water.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
 
   {
@@ -188,7 +208,8 @@
     "type": "Chemical",
     "color": "White to pink",
     "texture": "Crystalline",
-    "funFact": "Formed from limestone under heat and pressure."
+    "funFact": "Formed from limestone under heat and pressure.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 22,
@@ -197,7 +218,8 @@
     "type": "Clastic",
     "color": "Gray to black",
     "texture": "Fine-grained",
-    "funFact": "Derived from shale; splits into flat sheets."
+    "funFact": "Derived from shale; splits into flat sheets.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 23,
@@ -206,7 +228,8 @@
     "type": "Clastic",
     "color": "Sparkly gray",
     "texture": "Medium to coarse-grained",
-    "funFact": "Contains visible mica flakes."
+    "funFact": "Contains visible mica flakes.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 24,
@@ -215,7 +238,8 @@
     "type": "Clastic",
     "color": "Banded black and white",
     "texture": "Coarse-grained",
-    "funFact": "Shows distinct foliation from intense pressure."
+    "funFact": "Shows distinct foliation from intense pressure.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 25,
@@ -224,7 +248,8 @@
     "type": "Chemical",
     "color": "White to pink",
     "texture": "Hard and glassy",
-    "funFact": "Formed from sandstone under heat and pressure."
+    "funFact": "Formed from sandstone under heat and pressure.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 26,
@@ -233,7 +258,8 @@
     "type": "Clastic",
     "color": "Shiny gray",
     "texture": "Fine-grained",
-    "funFact": "Between slate and schist in metamorphic grade."
+    "funFact": "Between slate and schist in metamorphic grade.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 27,
@@ -242,7 +268,8 @@
     "type": "Chemical",
     "color": "Green",
     "texture": "Smooth and waxy",
-    "funFact": "Formed from ultramafic rocks in subduction zones."
+    "funFact": "Formed from ultramafic rocks in subduction zones.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 28,
@@ -251,7 +278,8 @@
     "type": "Clastic",
     "color": "Dark brown to black",
     "texture": "Fine-grained",
-    "funFact": "Forms from contact metamorphism near magma."
+    "funFact": "Forms from contact metamorphism near magma.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 29,
@@ -260,7 +288,8 @@
     "type": "Clastic",
     "color": "Dark green to black",
     "texture": "Medium to coarse-grained",
-    "funFact": "Forms from basalt or gabbro under high pressure and temperature."
+    "funFact": "Forms from basalt or gabbro under high pressure and temperature.",
+    "image": "/assets/img/00_placeholder.jpg"
   },
   {
     "id": 30,
@@ -269,6 +298,7 @@
     "type": "Chemical",
     "color": "Red and green",
     "texture": "Coarse-grained",
-    "funFact": "Forms deep in subduction zones and contains garnet and pyroxene."
+    "funFact": "Forms deep in subduction zones and contains garnet and pyroxene.",
+    "image": "/assets/img/00_placeholder.jpg"
   }
 ]

@@ -177,6 +177,12 @@ h1 {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+.rock-card img {
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .card-title {
   font-weight: 500;
   font-size: 1.25rem;
