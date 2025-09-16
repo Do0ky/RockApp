@@ -1,4 +1,4 @@
-export default function RockSearch({ query, setQuery }) {
+export default function SearchBar({ query, setQuery }) {
     return (
         <input
             type="search"
