@@ -22,9 +22,9 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 - ➕ **Collection Manager**  
   Save, tag, and annotate rocks in your personal collection. Perfect for field notes or study references.
 - 🧠 **Quiz Mode**  
-  Test your knowledge with a “Guess the Rock” game. Great for learners and enthusiasts alike.
+  Test your knowledge with a “Rock Quiz” game. Great for learners and enthusiasts alike.
 - 🧭 **Modular Navigation**  
-  Clean routing between Home, Explore, Collection, Quiz, Learn, and Settings—wrapped in a consistent layout.
+  Clean routing between Home, Explore, Collection, Quiz, and Settings—wrapped in a consistent layout.
 - 💾 **Local Storage** *(coming soon)*  
   Persist your collection across sessions for offline use and long-term tracking.
 - 🎨 **Responsive Design** *(coming soon)*  
@@ -38,7 +38,7 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 - **JavaScript** (ES6+)
 - **CSS** (global stylesheet)
 - **React Router** 
-- **JSON** (rock data source)
+- **JSON** (rock and quiz data source)
 - **Local Storage API**
 
 ---
@@ -55,9 +55,9 @@ src/
 │   ├── RockDetailModal.js
 │   ├── Header.js
 │   ├── Footer.js
-│   ├── CollectionManager.js
-│   └── QuizModule.js
+│   └── CollectionManager.js
 ├── data/
+│   ├── quiz.json
 │   └── rocks.json
 ├── pages/
 │   ├── RockCollection.js
