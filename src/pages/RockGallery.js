@@ -1,8 +1,8 @@
-import rocks from "../data/rocks.json"; // Importing the JSON data file
+import rocks from "../data/rocks.json";
 import RockCard from "../components/RockCard";
-import { useMemo, useState } from "react"; // Importing useState hook for state management
+import { useMemo, useState } from "react";
 import FilterPanel from "../components/FilterPanel";
-import RockSearch from "../components/SearchPanel";
+import RockSearch from "../components/SearchBar";
 import RockDetailModal from "../components/RockDetailModal";
 import { useNavigate } from "react-router-dom";
 
