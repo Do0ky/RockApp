@@ -7,7 +7,7 @@
     "color": "Light gray to pink",
     "texture": "Coarse-grained",
     "funFact": "Forms from slowly cooled magma deep underground.",
-    "image": "/assets/img/01_granite.jpg"
+    "image": "RockApp/assets/img/01_granite.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "color": "Dark gray to black",
     "texture": "Fine-grained",
     "funFact": "Makes up most of the ocean floor.",
-    "image": "/assets/img/02_basalt.jpg"
+    "image": "RockApp/assets/img/02_basalt.jpg"
   },
   {
     "id": 3,
