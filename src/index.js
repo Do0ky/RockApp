@@ -17,7 +17,7 @@ import Quiz from './pages/Quiz'; // Placeholder for Quiz component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />} />
