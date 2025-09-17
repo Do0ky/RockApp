@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RockApp/static/css/main.7eb4916f.css",
-    "main.js": "/RockApp/static/js/main.fe2c11e4.js",
+    "main.css": "/RockApp/static/css/main.5d2e2020.css",
+    "main.js": "/RockApp/static/js/main.97b06b1c.js",
     "static/media/Homepage_Background.jpg": "/RockApp/static/media/Homepage_Background.cf80a5cca281c38b700d.jpg",
     "static/media/Logo_01.png": "/RockApp/static/media/Logo_01.91507776aeb54887bc55.png",
     "static/media/Header_Title.png": "/RockApp/static/media/Header_Title.bf47334e7362ddf77e1c.png",
@@ -10,8 +10,6 @@
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/RockApp/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/RockApp/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/RockApp/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/lobster-latin-400.woff": "/RockApp/static/media/lobster-latin-400.e4473cd7170c39b44c99.woff",
-    "static/media/lobster-latin-400.woff2": "/RockApp/static/media/lobster-latin-400.484e338f970ddc242388.woff2",
     "static/media/open-sans-latin-800.woff": "/RockApp/static/media/open-sans-latin-800.8ab0bbdd48f276f4ba56.woff",
     "static/media/open-sans-latin-700.woff": "/RockApp/static/media/open-sans-latin-700.f24f4bcef8a4a0eb6345.woff",
     "static/media/open-sans-latin-600.woff": "/RockApp/static/media/open-sans-latin-600.7e06644bbdc83069cec8.woff",
@@ -33,11 +31,11 @@
     "static/media/open-sans-latin-600italic.woff2": "/RockApp/static/media/open-sans-latin-600italic.cc4bf5b2955147801c02.woff2",
     "static/media/open-sans-latin-400italic.woff2": "/RockApp/static/media/open-sans-latin-400italic.bb915319f59c02c348a6.woff2",
     "index.html": "/RockApp/index.html",
-    "main.7eb4916f.css.map": "/RockApp/static/css/main.7eb4916f.css.map",
-    "main.fe2c11e4.js.map": "/RockApp/static/js/main.fe2c11e4.js.map"
+    "main.5d2e2020.css.map": "/RockApp/static/css/main.5d2e2020.css.map",
+    "main.97b06b1c.js.map": "/RockApp/static/js/main.97b06b1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7eb4916f.css",
-    "static/js/main.fe2c11e4.js"
+    "static/css/main.5d2e2020.css",
+    "static/js/main.97b06b1c.js"
   ]
 }
