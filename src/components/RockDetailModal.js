@@ -14,6 +14,14 @@ const RockDetailModal = ( {rock, collection, onClose, onAddToCollection, onRemov
 
                 <button className="close-button" onClick={onClose}>×</button>
 
+                {rock.image && (
+                    <img
+                        src={rock.image}
+                        alt={rock.name}
+                        className="rock-image"
+                    />
+                )}
+                
                 <h2>{rock.name}</h2>
                 <p><strong>Category:</strong> {rock.category}</p>
                 <p><strong>Type:</strong> {rock.type}</p>
