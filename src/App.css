@@ -263,6 +263,13 @@ h1 {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   position: relative;
 }
+.rock-image {
+  width: 100%;
+  max-height: 260px;
+  margin: 1em 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
 .modal-content h2 {
   margin-top: 0;
   font-size: 2.1rem;
