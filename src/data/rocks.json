@@ -108,7 +108,7 @@
     "color": "Tan to reddish",
     "texture": "Medium-grained",
     "funFact": "Formed from compacted sand particles.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/11_sandstone.jpg"
   },
   {
     "id": 12,
@@ -118,7 +118,7 @@
     "color": "Gray to black",
     "texture": "Fine-grained",
     "funFact": "Often contains fossils and splits easily into layers.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/12_shale.jpg"
   },
   {
     "id": 13,
