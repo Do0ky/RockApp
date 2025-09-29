@@ -128,7 +128,7 @@
     "color": "White to gray",
     "texture": "Fine-grained",
     "funFact": "Often formed from marine organisms’ shells.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/13_limestone.jpg"
   },
   {
     "id": 14,
@@ -138,7 +138,7 @@
     "color": "Varied",
     "texture": "Coarse-grained",
     "funFact": "Contains rounded pebbles cemented together.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/14_conglomerate.jpg"
   },
   {
     "id": 15,
