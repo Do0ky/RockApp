@@ -168,7 +168,7 @@
     "color": "Gray to pink",
     "texture": "Fine-grained",
     "funFact": "Similar to limestone but contains magnesium.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/17_dolomite.jpg"
   },
   {
     "id": 18,
@@ -178,7 +178,7 @@
     "color": "Brown to gray",
     "texture": "Very fine-grained",
     "funFact": "Formed from silt-sized particles in calm water.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/18_siltstone.jpg"
   },
   {
     "id": 19,
@@ -188,7 +188,7 @@
     "color": "Black",
     "texture": "Brittle",
     "funFact": "Formed from ancient plant material in swamps.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/19_coal.jpg"
   },
   {
     "id": 20,
@@ -198,7 +198,7 @@
     "color": "White to transparent",
     "texture": "Soft and crystalline",
     "funFact": "Forms from evaporated saline water.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/20_gypsum.jpg"
   },
 
   {
@@ -209,7 +209,7 @@
     "color": "White to pink",
     "texture": "Crystalline",
     "funFact": "Formed from limestone under heat and pressure.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/21_marble.jpg"
   },
   {
     "id": 22,
@@ -219,7 +219,7 @@
     "color": "Gray to black",
     "texture": "Fine-grained",
     "funFact": "Derived from shale; splits into flat sheets.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/22_slate.jpg"
   },
   {
     "id": 23,
@@ -229,7 +229,7 @@
     "color": "Sparkly gray",
     "texture": "Medium to coarse-grained",
     "funFact": "Contains visible mica flakes.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/23_schist.jpg"
   },
   {
     "id": 24,
