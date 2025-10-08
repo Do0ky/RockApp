@@ -239,7 +239,7 @@
     "color": "Banded black and white",
     "texture": "Coarse-grained",
     "funFact": "Shows distinct foliation from intense pressure.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/24_gneiss.jpg"
   },
   {
     "id": 25,
@@ -249,7 +249,7 @@
     "color": "White to pink",
     "texture": "Hard and glassy",
     "funFact": "Formed from sandstone under heat and pressure.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/25_quartzite.jpg"
   },
   {
     "id": 26,
@@ -259,7 +259,7 @@
     "color": "Shiny gray",
     "texture": "Fine-grained",
     "funFact": "Between slate and schist in metamorphic grade.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/26_phyllite.jpg"
   },
   {
     "id": 27,
@@ -269,7 +269,7 @@
     "color": "Green",
     "texture": "Smooth and waxy",
     "funFact": "Formed from ultramafic rocks in subduction zones.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/27_serpentinite.jpg"
   },
   {
     "id": 28,
@@ -279,7 +279,7 @@
     "color": "Dark brown to black",
     "texture": "Fine-grained",
     "funFact": "Forms from contact metamorphism near magma.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/28_hornfels.jpg"
   },
   {
     "id": 29,
@@ -299,6 +299,6 @@
     "color": "Red and green",
     "texture": "Coarse-grained",
     "funFact": "Forms deep in subduction zones and contains garnet and pyroxene.",
-    "image": "/RockApp/assets/img/00_placeholder.jpg"
+    "image": "/RockApp/assets/img/30_eclogite.jpg"
   }
 ]
