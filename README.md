@@ -1,4 +1,11 @@
-# ⛰️ Rock App
+# ⛰️ ROCK APP
+
+![Static Badge](https://img.shields.io/badge/npm-red?style=plastic&logo=npm&color=CB3837)
+![Static Badge](https://img.shields.io/badge/React-blue?style=plastic&logo=react&color=61DBFB)
+![Static Badge](https://img.shields.io/badge/JavaScript-yellow?style=plastic&logo=javascript)
+![Static Badge](https://img.shields.io/badge/Bootstrap-blue?style=plastic&logo=bootstrap&color=563d7c)
+![Static Badge](https://img.shields.io/badge/CSS3-blue?style=plastic&logo=css&color=2965f1)
+![Static Badge](https://img.shields.io/badge/Git-blue?style=plastic&logo=git&color=f14e32)
 
 An interactive React-based educational app that helps users explore and identify common rock types.
 Designed for amateur geologists, hikers, students, and curious minds, this app makes geology accessible, engaging, and fun.
@@ -46,23 +53,24 @@ The **Rock App** empowers users to explore and identify rocks through an intuiti
 ## 📁 Project Structure
 ```bash
 src/
-├── assets/
-│   └── img/
+├── app/
+│   └── assets/
+│       └── img/
 ├── components/
-│   ├── RockCard.js
+│   ├── CollectionManager.js
 │   ├── FilterPanel.js
-│   ├── SearchBar.js
-│   ├── RockDetailModal.js
-│   ├── Header.js
 │   ├── Footer.js
-│   └── CollectionManager.js
+│   ├── Header.js
+│   ├── RockCard.js
+│   ├── RockDetailModal.js
+│   └── SearchBar.js
 ├── data/
 │   ├── quiz.json
 │   └── rocks.json
 ├── pages/
+│   ├── Quiz.js
 │   ├── RockCollection.js
-│   ├── RockGallery.js
-│   └── Quiz.js
+│   └── RockGallery.js
 ├── App.js
 └── index.js
 ```
@@ -91,7 +99,6 @@ npm start
 - 📊 Fetch more data from an API
 - 📸 Image upload for rock identification
 - 🗺️ Map integration to show rock locations
-- 🧭 AR or camera-based recognition
 - 🧑‍🤝‍🧑 User submissions and community features
 
 ---
